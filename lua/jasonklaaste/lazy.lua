@@ -13,6 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    "mbbill/undotree",
     "tpope/vim-fugitive",
     {
         "ThePrimeagen/harpoon",
