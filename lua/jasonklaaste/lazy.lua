@@ -13,6 +13,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    "tpope/vim-fugitive",
+    {
+        "ThePrimeagen/harpoon",
+	branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    },
     "folke/which-key.nvim",
     "nvim-treesitter/nvim-treesitter",
     {
