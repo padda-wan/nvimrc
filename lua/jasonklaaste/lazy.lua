@@ -14,6 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
+        'goolord/alpha-nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    },
+    {'ryanoasis/vim-devicons'},
+    {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     },
